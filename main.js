@@ -2,8 +2,8 @@
 let favs = Array.from (document.querySelectorAll(".fa-heart"));
 let cards = Array.from (document.querySelectorAll(".card"));
 let delbtns = Array.from(document.querySelectorAll(".fa-trash-can"));
-let plusbtns = Array.from (document.querySelectorAll(".fa-circle-plus"));
-let minusbtns  =Array.from(document.querySelectorAll(".fa-circle-minus"));
+let plusbtns = Array.from (document.querySelectorAll(".add"));
+let minusbtns  =Array.from(document.querySelectorAll(".subtract"));
 
 // Favorits
 for (let fav of favs) {
@@ -14,7 +14,7 @@ for (let fav of favs) {
             fav.style.color = "white";
         }
     });
-}
+};
 
 // remove button part
 for (let i in delbtns) {
